@@ -11,18 +11,13 @@ html, body {
 }
 
 .app{
-  width: 100%;
-  height: 40rem;
-  bottom: 3 ;
-  position: fixed;
-  overflow: auto;
-  direction:ltr;
-
+  flex-flow: column wrap;
+  border-top: 2px solid #d0d0d0;
+  justify-content: space-between;
 }
 
 .messages {
   width: 85%;
-  height: 53rem;
   padding: 0.1em;
   margin: 0 auto;
   border-bottom: solid 1px #D0D0D0;
