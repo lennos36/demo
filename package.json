@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@aws-amplify/cache": "^3.1.36",
     "@aws-amplify/core": "^3.8.17",
     "@aws-amplify/datastore": "^2.9.11",
     "@testing-library/jest-dom": "^5.11.9",
