@@ -18,7 +18,7 @@ html, body {
 
 .messages {
   width: 100%;
-  height: 80rem;
+  height: 50rem;
   bottom: 3 ;
   position: fixed;
   overflow: auto;
