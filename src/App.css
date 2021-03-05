@@ -40,11 +40,13 @@ html, body {
 }
 
 .message {
-  width: 85%;
-  padding: 0.1em;
-  margin: 0 auto;
-  border-bottom: solid 1px #D0D0D0;
+  background: #0099ff;
+  color: white;
+  margin-top: 4px;
+  padding: 10px 25px;
+  max-width: 500px;
   border-radius: 16px;
+  font-size: 25px;
 
 }
 
