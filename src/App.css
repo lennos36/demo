@@ -1,19 +1,31 @@
+:root{
+
+  --amplify-primary-color: #008000;
+  --amplify-primary-tint: #0000FF; 
+  --amplify-primary-shade: #008000;
+
+  }
+
 html, body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .app{
-  flex-flow: column wrap;
-  border-top: 2px solid #d0d0d0;
-  justify-content: space-between;
+  width: 100%;
+  height: 40rem;
+  bottom: 3 ;
+  position: fixed;
+  overflow: auto;
+  direction:ltr;
+
 }
 
 .messages {
-  width: 100%;
-  height: 53rem;
-  bottom: 6;
-  overflow: auto;
-  direction: ltr;
+  width: 85%;
+  padding: 0.1em;
+  margin: 0 auto;
+  border-bottom: solid 1px #D0D0D0;
+
 }
 
 .messages-scroller {
@@ -32,7 +44,7 @@ html, body {
   margin-top: 4px;
   padding: 10px 12px;
   max-width: 500px;
-  background: #00ff37;
+  background: #ffbb00;
   border-radius: 16px;
   font-size: 25px;
 }
