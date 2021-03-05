@@ -82,7 +82,7 @@ function App() {
               <div> { message.user }</div>
               <div className="message">
                 <div> { message.message }</div>
-                <div> { moment(message.createdAt).format('HH:mm')}</div>
+                <div className="date"> { moment(message.createdAt).format('HH:mm')}</div>
               </div>
             </div>
           ))}
