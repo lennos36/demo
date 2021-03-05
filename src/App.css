@@ -18,13 +18,11 @@ html, body {
 
 .messages {
   width: 100%;
-  height: 44rem;
+  height: 80rem;
   bottom: 3 ;
   position: fixed;
   overflow: auto;
   direction:ltr;
-
-
 }
 
 .messages-scroller {
