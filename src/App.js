@@ -29,7 +29,7 @@ function reducer(state, action) {
 async function getMessages(dispatch) {
   try {
     const messagesData = await DataStore.query(Chatty, Predicates.ALL);
-    const sorted = [...messagesData].sort((a, b) => -a.createdAt.localeCompare(b.createdAt))
+    const sorted = [...messagesData].sort((b, a) => -a.createdAt.localeCompare(b.createdAt))
     dispatch({ type: 'set', messages: sorted })
   } catch (err) {
     console.log('error fetching messages...', err)
@@ -72,23 +72,29 @@ function App() {
     });
     return () => subscription.unsubscribe();
   }, [])
-
+  
   return (
     <div className="app">
-      <div>
+      <div className="messages">
+        <div className="messages-scroller">
+          { state.messages.map((message, index) => (
+            <div key={ message.id }>
+              <div> { message.user }</div>
+              <div className="message">
+                <div> { message.message }</div>
+                <div> { moment(message.createdAt).format('HH:mm')}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="chat-bar">
         <input
           type="text" placeholder="Enter your message..."
           onChange={ e => updater(e.target.value, 'message', dispatch) }
           value={ state.message }
         />
-        <button onClick={() => createMessage(state, dispatch)}>Create Message</button>
-        { state.messages.map((message, index) => (
-          <div key={ message.id }>
-            <div> { message.user }</div>
-            <div> { message.message }</div>
-            <div> { moment(message.createdAt).format('HH:mm:ss')}</div>
-          </div>
-        ))}
+        <button className="send-message-button" onClick={() => createMessage(state, dispatch)}>Create Message</button>
       </div>
     </div>
   );
