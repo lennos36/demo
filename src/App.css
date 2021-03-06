@@ -42,7 +42,7 @@ html, body {
   color: white;
   margin-top: 4px;
   padding: 10px 25px;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 16px;
   font-size: 25px;
 
@@ -50,11 +50,11 @@ html, body {
 
 .message.me {
   align-self: flex-end;
-  background: #0099ff;
+  background: #6ecf6b;
   color: white;
   margin-top: 4px;
   padding: 10px 25px;
-  max-width: 500px;
+  max-width: 400px;
   border-radius: 16px;
   font-size: 25px;
 }
