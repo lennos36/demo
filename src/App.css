@@ -45,7 +45,6 @@ html, body {
   max-width: 400px;
   border-radius: 16px;
   font-size: 25px;
-  align-self: flex-start;
 }
 
 .message.me {

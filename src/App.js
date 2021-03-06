@@ -80,7 +80,7 @@ function App() {
           { state.messages.map((message, index) => (
             <div key={ message.id }>
               <div> { message.user }</div>
-              <div className={message.user === 'shane' ? 'message me' : 'message'}>{ message.message }
+              <div key={ message.id } className={message.user === 'shane' ? 'message me' : 'message'}>{ message.message }
                 <div className="date"> { moment(message.createdAt).format('HH:mm')}</div>
               </div>
             </div>
