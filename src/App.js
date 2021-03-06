@@ -78,7 +78,7 @@ function App() {
       <div className="messages">
         <div className="messages-scroller">
           { state.messages.map((message, index) => (
-            <div key={ message.id } className={message.author === 'shane' ? 'message me' : 'message'}>>
+            <div key={ message.id } className={message.user === 'shane' ? 'message me'}>
               <div> { message.user }</div>
               <div className="message">
                 <div> { message.message }</div>
