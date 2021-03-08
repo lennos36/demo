@@ -70,6 +70,7 @@ function App() {
       console.log(msg.model, msg.opType, msg.element);
       getMessages(dispatch)
     });
+    
     return () => subscription.unsubscribe();
   }, [])
   
