@@ -78,7 +78,7 @@ function App() {
       <div className="messages">
         <div className="messages-scroller">
           { state.messages.map((message, index) => (
-            <div key={ message.id } className={message.user ===  Auth.username? 'message me' : 'message'}>
+            <div key={ message.id } className={message.user ===  Auth.user.username? 'message me' : 'message'}>
               <div className="name">{ message.user }</div>
               <div>{ message.message }</div>
                 <div className="date">{ moment(message.createdAt).format('HH:mm')}</div>
