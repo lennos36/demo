@@ -50,7 +50,6 @@ async function createMessage(state, dispatch) {
     );
     state.message = '';
     getMessages(dispatch);
-    window.scrollTo(0,document.body.scrollHeight);
   } catch (err) {
     console.log('error creating message...', err)
   }
