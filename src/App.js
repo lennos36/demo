@@ -1,5 +1,5 @@
-import React, { useEffect, useReducer } from 'react'
 import './App.css';
+import React, { useEffect, useReducer } from 'react'
 import { withAuthenticator } from 'aws-amplify-react'
 import { Auth } from 'aws-amplify'
 import { DataStore, Predicates } from "@aws-amplify/datastore";
@@ -48,6 +48,7 @@ async function createMessage(state, dispatch) {
         createdAt: new Date().toISOString()
       })
     );
+    await DataStore.delete(Chatty, Predicates.ALL);
     state.message = '';
     getMessages(dispatch);
   } catch (err) {
