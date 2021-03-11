@@ -369,3 +369,30 @@ html, body {
   -webkit-align-self: center;
   align-self: center;
 }
+
+@media only screen and (max-width: 600px) {
+  .chat-bar input {
+    padding: 1rem;
+    font-size: 15px;
+    width: 100%;
+    background: whitesmoke;
+    border-left: none;
+    border-bottom: 3px solid whitesmoke !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+
+  }
+  .chat-bar button {
+    width: 40%;
+    padding: 1rem;
+    background: 48484;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+  }
+}
