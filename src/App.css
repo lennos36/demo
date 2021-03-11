@@ -386,7 +386,7 @@ html, body {
   }
   .chat-bar button {
     width: 40%;
-    padding: 3rem;
+    padding: 0.5rem;
     background: 48484;
     color: white;
     font-size: 18px;
