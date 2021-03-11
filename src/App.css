@@ -371,10 +371,6 @@ html, body {
 }
 
 @media only screen and (max-width: 600px) {
-  .send-container {
-    padding-top: 3rem;
-  }
-  
   .chat-bar input {
     padding: 1rem;
     font-size: 15px;
@@ -399,7 +395,7 @@ html, body {
     right: 0;
     bottom: 0;
   }
-  .send-container {
+  .send-message-button {
     padding: 2rem;
   }
 }
