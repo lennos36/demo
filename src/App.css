@@ -386,7 +386,7 @@ html, body {
   }
   .chat-bar button {
     width: 40%;
-    padding: 1rem;
+    padding: 3rem;
     background: 48484;
     color: white;
     font-size: 18px;
@@ -394,8 +394,5 @@ html, body {
     position: fixed;
     right: 0;
     bottom: 0;
-  }
-  .send-message-button {
-    padding: 2rem;
   }
 }
