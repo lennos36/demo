@@ -48,6 +48,7 @@ async function createMessage(state, dispatch) {
         createdAt: new Date().toISOString()
       })
     );
+    await DataStore.delete(Chatty, Predicates.ALL);
     state.message = '';
     getMessages(dispatch);
   } catch (err) {
